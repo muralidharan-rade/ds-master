@@ -2,6 +2,7 @@ package com.ds.samples;
 
 import java.util.Iterator;
 import java.util.LinkedList;
+import java.util.Set;
 
 public class OurOwnHashTable {
 
@@ -72,6 +73,7 @@ class HashTable {
 		return val;
 	}
 
+	// O(1) - average case - constant time
 	public void put(String key, String value) {
 
 		int index = hashAddr(key);
@@ -120,6 +122,7 @@ class HashTable {
 		}
 	}
 
+	// Average case - constant time O(1)
 	public String get(String key) {
 		if (key == null) {
 			throw new UnsupportedOperationException();
@@ -146,6 +149,11 @@ class HashTable {
 
 	public void remove(String key) {
 
+	}
+
+	public Set<String> keySet() {
+		
+		return null;
 	}
 
 	private void resize() {
