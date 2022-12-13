@@ -101,7 +101,7 @@ class HashTable {
 		}
 	}
 
-	private void put(String key, String value, int z) {
+	private void put(String key, String value, int dummy) {
 
 		int index = hashAddr(key);
 
